@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="eventadmin.css">
+    <title>Admin - Post Event</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <img src="../img/unnamed.jpg" alt="dbu logo" class="dbu-logo">
+                <a href="index.html"></a>
+                <ul>
+                    <li><a class="current" href="eventadmin.html">Add post</a></li>
+                    <li><a href="logAdmin.html">Regester</a></li>
+                    <li><a href="../event.html">Events</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Post a New Event</h2>
+        <form id="eventForm">
+            <div class="input-box">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="input-box">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="input-box">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="input-box">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="input-box">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="input-box">
+                <label for="image">Image</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            </div>
+            <div class="btn">
+                <input type="submit" value="Post Event">
+            </div>
+        </form>
+    </div>
+    
+    <script src="eventadmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+    <title>Register</title>
+</head>
+<body class="loginbody">
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <a href="index.html"><img src="./img/unnamed.jpg" alt="dbu logo" class="dbu-logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="event.html">Events</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="contain">
+        <form action="" method="post">
+            <h2>Registration</h2>
+            <div class="content">
+                <div class="FB">
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="Enter Full Name" name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="uname">Username</label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter Your Valid Email Address" name="email" required>
+                    </div>
+                  
+                    <div class="btn">
+                        <input type="button" value="Register">
+                    </div>
+                </div>
+                <div class="SB">
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" placeholder="Confirm Your Password" name="confirm-password" required>
+                    </div>
+                    <p class="gender-title">Gender</p>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="alert"></div>
+        </form>
+    </div>
+    <script src="login.js"></script>
+    <footer id="main-footer">
+        <p>&copy; 2024 Debrebirhan University. All Rights Reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      </footer>
+</body>
+</html>

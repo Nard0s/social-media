@@ -1,0 +1,87 @@
+
+
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif; 
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact-form {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#contact-form .container {
+    max-width: 700px;
+}
+
+#contact-form form {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact-form button.btn {
+    background: #05445E;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contact-form button.btn:hover {
+    background:#75E6DA;
+    color:#05445E;
+}
+
+/* Footer styling */
+#main-footer {
+    background-color:#208b74;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+}
